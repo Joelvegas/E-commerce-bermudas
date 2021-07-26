@@ -1,0 +1,437 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100vw;
+  max-width: 100%;
+  max-height: 100%;
+  font-family: "Montserrat", sans-serif;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+main {
+  width: 100%;
+  height: 100%;
+}
+@media (min-width: 1500px) {
+  main {
+    width: 85%;
+    margin: auto;
+  }
+}
+
+header {
+  padding: 0.3rem;
+  background-color: #064791;
+}
+header nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+header nav :nth-of-type(1) img {
+  width: 6rem;
+  height: auto;
+  border-radius: 50%;
+}
+header nav :nth-of-type(2) ul {
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+}
+header nav :nth-of-type(2) ul li {
+  margin: 5px;
+  color: blanchedalmond;
+}
+@media (min-width: 768px) {
+  header nav {
+    justify-content: space-between;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  header nav :nth-of-type(1) img {
+    width: 8rem;
+  }
+  header nav :nth-of-type(2) ul {
+    font-size: 23px;
+  }
+  header nav :nth-of-type(2) ul li {
+    margin: 10px;
+  }
+}
+@media (min-width: 1500px) {
+  header nav {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  header nav :nth-of-type(1) img {
+    width: 11rem;
+  }
+  header nav :nth-of-type(2) ul {
+    font-size: 29px;
+  }
+  header nav :nth-of-type(2) ul li {
+    margin: 15px;
+  }
+}
+
+.portada {
+  background-image: url(../assets/img/fondo1.jpg);
+  height: 40vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+}
+.portada div {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  padding: 2rem;
+}
+.portada div a {
+  background-color: #064791;
+  border-radius: 2rem;
+  padding: 5px;
+  color: whitesmoke;
+  font-size: 15px;
+  font-weight: 400;
+}
+@media (min-width: 768px) {
+  .portada div {
+    padding: 3rem;
+  }
+  .portada div a {
+    font-size: 20px;
+  }
+}
+@media (min-width: 1500px) {
+  .portada {
+    height: 90vh;
+  }
+  .portada div {
+    padding: 3.5rem;
+  }
+  .portada div a {
+    font-size: 30px;
+  }
+}
+
+.nosotros {
+  background-color: #CCE3E8;
+}
+.nosotros .verdes h2 {
+  font-size: 1.7rem;
+  font-weight: 900;
+  display: flex;
+  justify-content: flex-start;
+  padding: 2rem;
+}
+.nosotros .verdes p {
+  padding: 1rem;
+  padding-top: 0rem;
+  display: flex;
+  justify-content: flex-start;
+  font-weight: 600;
+}
+.nosotros .verdes img {
+  width: 100vw;
+  height: 16rem;
+}
+@media (min-width: 768px) {
+  .nosotros .verdes {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1.5rem;
+  }
+  .nosotros .verdes :nth-of-type(1) h2 {
+    font-size: 30px;
+  }
+  .nosotros .verdes :nth-of-type(2) img {
+    width: 60vw;
+  }
+}
+@media (min-width: 1500px) {
+  .nosotros .verdes {
+    display: flex;
+    align-items: center;
+  }
+  .nosotros .verdes :nth-of-type(1) h2 {
+    font-size: 50px;
+  }
+  .nosotros .verdes :nth-of-type(1) p {
+    font-size: 20px;
+  }
+  .nosotros .verdes :nth-of-type(2) img {
+    width: 45vw;
+    height: 40vh;
+  }
+}
+.nosotros .cool h2 {
+  font-size: 1.7rem;
+  font-weight: 900;
+  display: flex;
+  justify-content: flex-start;
+  padding: 2rem;
+}
+.nosotros .cool p {
+  padding: 1rem;
+  padding-top: 0rem;
+  display: flex;
+  justify-content: flex-start;
+  font-weight: 600;
+}
+.nosotros .cool img {
+  width: 100vw;
+  height: 16rem;
+}
+@media (min-width: 768px) {
+  .nosotros .cool {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+  .nosotros .cool :nth-of-type(1) h2 {
+    font-size: 30px;
+  }
+  .nosotros .cool :nth-of-type(2) img {
+    width: 60vw;
+    height: 30vh;
+  }
+}
+@media (min-width: 1500px) {
+  .nosotros .cool {
+    display: flex;
+    align-items: center;
+  }
+  .nosotros .cool :nth-of-type(1) h2 {
+    font-size: 50px;
+  }
+  .nosotros .cool :nth-of-type(1) p {
+    font-size: 20px;
+  }
+  .nosotros .cool :nth-of-type(2) img {
+    width: 45vw;
+    height: 40vh;
+  }
+}
+
+.shop h2 {
+  padding: 1.6rem;
+  display: flex;
+  justify-content: center;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+@media (min-width: 1500px) {
+  .shop h2 {
+    font-size: 45px;
+  }
+}
+.shop .uno span {
+  color: ivory;
+  font-weight: 900;
+  font-size: 1.3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.shop .uno :nth-of-type(1) {
+  background-image: url(../assets/img/classics.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100vw;
+  height: 35vh;
+  margin-bottom: 1rem;
+}
+.shop .uno :nth-of-type(2) {
+  background-image: url(../assets/img/americans.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 35vh;
+  margin-bottom: 1rem;
+}
+.shop .uno :nth-of-type(3) {
+  background-image: url(../assets/img/hawaiian.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  width: 100vw;
+  height: 35vh;
+  margin-bottom: 1rem;
+}
+.shop .uno :nth-of-type(4) {
+  background-image: url(../assets/img/casual.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 35vh;
+  margin-bottom: 1rem;
+}
+@media (min-width: 1500px) {
+  .shop .uno {
+    display: flex;
+    justify-content: space-between;
+  }
+  .shop .uno :nth-of-type(1) {
+    width: 20vw;
+    height: 20vw;
+  }
+  .shop .uno :nth-of-type(2) {
+    width: 20vw;
+    height: 20vw;
+  }
+  .shop .uno :nth-of-type(3) {
+    width: 20vw;
+    height: 20vw;
+  }
+  .shop .uno :nth-of-type(4) {
+    width: 20vw;
+    height: 20vw;
+  }
+}
+.shop .dos span {
+  color: ivory;
+  font-weight: 900;
+  font-size: 1.3rem;
+}
+.shop .dos :nth-of-type(1) {
+  background-image: url(../assets/img/new-arrivals.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 35vh;
+  margin-bottom: 1rem;
+}
+.shop .dos :nth-of-type(2) {
+  background-image: url(../assets/img/chicas.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 35vh;
+  margin-bottom: 1rem;
+}
+@media (min-width: 1500px) {
+  .shop .dos {
+    display: flex;
+    justify-content: space-between;
+  }
+  .shop .dos :nth-of-type(1) {
+    width: 41.5vw;
+    height: 45vh;
+  }
+  .shop .dos :nth-of-type(2) {
+    width: 41.5vw;
+    height: 45vh;
+  }
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #D5D9DA;
+}
+footer :nth-of-type(1) h3 {
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  padding: 0.5rem;
+}
+footer :nth-of-type(1) ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5px;
+}
+footer :nth-of-type(1) ul li {
+  padding: 3px;
+}
+footer :nth-of-type(1) ul li a {
+  color: black;
+}
+footer hr {
+  width: 70vw;
+  height: 2px;
+}
+footer :nth-of-type(2) h3 {
+  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+  padding: 0.5rem;
+}
+footer :nth-of-type(2) form {
+  padding: 5px;
+}
+footer :nth-of-type(2) form input {
+  border-radius: 5px;
+  margin: 3px;
+}
+@media (min-width: 768px) {
+  footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 1rem;
+  }
+  footer hr {
+    display: none;
+  }
+  footer :nth-of-type(1) h3 {
+    font-size: 2rem;
+  }
+  footer :nth-of-type(1) ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+  }
+  footer :nth-of-type(1) ul li {
+    padding: 5px;
+  }
+  footer :nth-of-type(1) ul li a {
+    font-size: 20px;
+  }
+  footer :nth-of-type(2) h3 {
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    padding: 0.5rem;
+  }
+  footer :nth-of-type(2) form {
+    padding: 10px;
+  }
+  footer :nth-of-type(2) form input {
+    border-radius: 5px;
+    margin: 5px;
+    padding: 5px;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
